@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoesStocks | Login</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html" class="navbar-brand">JoesStocks</a>
+  <div class="navbar-links">
+    <a href="index.html">Home/Search</a>
+    <a href="login.html">Login / Sign Up</a>
+  </div>
+</div>
+
+<div class="form-container">
+  <section class="login-form">
+    <h2>Login</h2>
+    <form id="login" method="POST" action="LoginServlet">
+      <label for="username">Username:</label>
+      <input type="text" id="login_username" name="login_username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="login_password" name="login_password" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="signup-form">
+    <h2>Sign Up</h2>
+    <form id="signup" method="POST" action="RegisterServlet">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</div>
+
+<!-- <script src="login.js"></script> -->
+</body>
+</html>
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoesStocks | Home</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html" class="navbar-brand">JoesStocks</a>
+  <div class="navbar-links">
+
+  </div>
+</div>
+
+<div class="header">
+  <h1>SEARCH STOCKS</h1>
+</div>
+
+<div class="search-container">
+    <span class="search-icon"></span>
+    <input type="text" id="searchField" placeholder="Search by ticker..."> 
+    <button id="searchButton">
+        <img src="klipartz.com.png" alt="Search" style="width: 20px; height: 20px;" />
+    </button>
+</div>
+
+<div class="main-content">
+  <div id="stockQuoteDetails" class="stock-quote-details">
+  	<div class="left-container">
+  		<div id="tickerInfo" class="ticker-info"></div>
+  		<div id="companyName" class="company-name"></div>
+  		<div id="exchangeInfo" class="exchange"></div>
+    	
+    </div>
+    <div class="right-container">
+    	<div class="current-price"></div>
+	    <div class="change ${changeClass}"></div>
+	    <div class="current-day"></div>
+    </div>
+    
+  </div>
+  <div id="summary"></div>
+  <div id="stockProfileDetails" class="stock-profile-details">
+		
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

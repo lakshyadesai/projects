@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #8c8bf0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a:not(:last-child) {
+  margin-right: 0px;
+}
+
+.header h1 {
+  text-align: center;
+  position: relative;
+  color: black; 
+  top: 200px;
+  padding: 5px; 
+  background-color: white; 
+  font-size: 40px; 
+  font-weight: normal;
+  letter-spacing: normal; 
+  text-transform: uppercase;
+  margin: 0; 
+  font-family: sans-serif;
+}
+
+#portfolio-container {
+    margin-top: 60px;
+    padding: 20px;
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+}
+
+#balance {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#balance h2 {
+    margin-bottom: 10px;
+}
+
+#balance > div {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.stock-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.stock-item h3 {
+    grid-column: 1 / -1;
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 0;
+}
+
+.card {
+	padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.transaction-form {
+    display: grid;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.qty {
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.options {
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.submitButton {
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+input[type='number'], rgb(163, 165, 163)ype='submit'] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input[type='submit'] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.icon-up:before {
+    content: "\25B2";
+}
+
+.icon-up {
+	font-size: smaller;
+}
+
+.icon-down {
+	font-size: smaller;
+}
+
+.icon-down:before {
+    content: "\25BC";
+}
+
+.positive-change {
+    color: green;
+}
+
+.negative-change {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    #portfolio-container {
+        width: 95%;
+    }
+
+    .stock-item {
+        grid-template-columns: 1fr; 
+    }
+}
